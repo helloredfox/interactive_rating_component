@@ -3,9 +3,33 @@
     --orange: hsl(25, 97%, 53%);
     --white: hsl(0,0%,100%);
     --light-gray: hsl(217, 12%, 63%);
-    --medium-gray: 
+    --medium-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
 }
-
+/* * {
+    border: 1px solid yellow;
+} */
+html {
+    font-size: 15px;
+    font-family: Overpass;
+}
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+article {
+    width: 325px;
+}
+.rating-section {
+    background-color: var(--very-dark-blue);
+    border-radius: 20px;
+    padding: 20px;
+}
 
 
 
