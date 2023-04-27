@@ -11,12 +11,11 @@
     --circle-width: 50px;
     --circle-height: var(--circle-width);
 }
-/* * {
-    border: 1px solid yellow;
-} */
+
 html {
     font-size: 15px;
     font-family: Overpass;
+    height: 100vh;
 }
 body {
     background-color: black;
@@ -25,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0;
+    height: 100%;
 }
 article {
     width: 420px;
@@ -36,7 +36,6 @@ h1 {
 }
 p {
     color: var(--medium-gray);
-    width: 35ch;
     line-height: 1.7rem;
     
 }
@@ -60,7 +59,6 @@ label {
     cursor: pointer;
     margin: 0;
 }
-
 input,legend {
     display: none;
 }
@@ -75,8 +73,11 @@ button {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
+.how-did-we-do {
+    width: 35ch;
+}
 .star-icon {
-    background-color: hsla(216, 12%, 12%);
+    background-color: hsl(216, 12%, 12%);
     height: var(--circle-height);
     width: var(--circle-width);
     border-radius: 50%;
@@ -88,10 +89,30 @@ button {
     width: var(--star-width);
     height: var(--star-height);
 }
-.rating-section {
+.rating-section, .thank-you-section {
     background-color: var(--very-dark-blue);
     border-radius: 20px;
     padding: 30px;
+}
+
+.thank-you-section {
+    text-align: center;
+}
+.selection-text {
+    color: var(--orange);
+    background-color: hsl(216, 12%, 12%);
+    border-radius: 20px;
+    width: max-content;
+    margin: 20px auto;
+    font-size: .8rem;
+    padding: 2px 40px;
+}
+.thank-you-text {
+    width: 35ch;
+    margin: 1rem auto;
+}
+.hidden {
+    display: none;
 }
 label:hover {
     background-color: var(--orange);
@@ -106,15 +127,12 @@ input:checked + label  {
     background-color: var(--light-gray);
     color: var(--white);
 }
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    margin-top: 2rem;
+    font-size: 11px; 
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    width: max-content;
+    text-align: center;
+}

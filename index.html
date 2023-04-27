@@ -7,19 +7,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">  
+  <link rel="stylesheet" href="styles.css"> 
+  <script type="text/javascript" src="script.js" defer></script> 
   <title>Interactive rating component</title>
 </head>
 <body>
   <!-- Rating state start -->
-  <article class="interactive_rating_component">
+  <article class="interactive-rating-component">
     <section class="rating-section">
       <div class="star-icon">
         <img src="./images/icon-star.svg" alt="An orange star inside of a circle">
       </div>
-      <form>
+      <form class="my-form">
         <h1>How did we do?</h1>
-        <p>Please let us know how we did with your support request. All feedback is appreciated 
+        <p class="how-did-we-do">Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering!</p>
         <fieldset>
           <legend>Rating Selection</legend>
@@ -45,20 +46,17 @@
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <section class="thank-you-section">
-    <div class="thank-you-icon">
+  <section class="thank-you-section hidden">
       <img src="./images/illustration-thank-you.svg" alt="A credit card, a cell phone, and a piece of paper with illegible writing on it.">
-    </div>
-    <p>You selected <span class="selected-rating"></span> out of 5</p>
-    <p class="thank-you">Thank you!</p>
-    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+    <p class="selection-text">You selected <span class="selected-rating"></span> out of 5</p>
+    <h1>Thank you!</h1>
+    <p class="thank-you-text">We appreciate you taking the time to give a rating. If you ever need more support, 
       don’t hesitate to get in touch!</p>
   </section>
   <!-- Thank you state end -->
   </article>
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Jared Clark</a>.</p>
   </footer>
 </body>
 </html>
