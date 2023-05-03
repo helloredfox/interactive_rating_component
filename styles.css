@@ -11,7 +11,6 @@
     --circle-width: 50px;
     --circle-height: var(--circle-width);
 }
-
 html {
     font-size: 15px;
     font-family: Overpass;
@@ -28,6 +27,7 @@ body {
 }
 article {
     width: 420px;
+    height: 420px;
 }
 h1 {
     font-size: 2rem;
@@ -127,12 +127,27 @@ input:checked + label  {
     background-color: var(--light-gray);
     color: var(--white);
 }
-.attribution { 
-    margin-top: 2rem;
-    font-size: 11px; 
- }
-.attribution a { 
-    color: hsl(228, 45%, 44%);
-    width: max-content;
-    text-align: center;
+footer {
+    position: absolute;
+    bottom: 1rem;
+}
+footer a {
+    color: white;
+}
+@media (max-width: 450px) {
+    article {
+        width: 340px;
+        height: 340px;
+    }
+        label {
+        width: 40px;
+        height: 40px;
+        line-height: 2.8rem;
+    }
+    .how-did-we-do, .thank-you-text {
+        width: 31ch;
+    }
+    .rating-section, .thank-you-section {
+        padding: 20px;
+    }
 }
